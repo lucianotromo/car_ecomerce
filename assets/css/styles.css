@@ -13,16 +13,38 @@ nav {
     height: 100%;
     grid-area: N;
     display: flex;
+    flex-direction: column;
     color: white;
     padding: 1rem;
     align-items: center;
     font-size: 20px;
-    position: fixed;
+    /* position:fixed; */
+}
+
+.lista-categorias{
+    text-decoration: none;
+}
+
+.categorias-aside{
+    display: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.lista-categorias{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categorias-aside ul{
+    text-decoration: none;
 }
 
 .categorias{
     /* transform: translateY(-100%); */
+    display: initial;
 }
+
 
 .nav-content {
     display: flex;
@@ -31,6 +53,8 @@ nav {
     width: 100%;
 }
 
+
+
 .logo-name {
     display: flex;
     align-items: center;
@@ -38,11 +62,20 @@ nav {
 
 .toggle{
     cursor: pointer;
+    background-color: rgb(45, 75, 147);
+    border: none;  
 }
 
 .car-icon {
     padding-right: 8px;
     cursor: pointer;
+}
+
+nav ul{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .filtro-busqueda {
@@ -155,6 +188,10 @@ footer {
         
         display: flex;
         align-items: flex-start;
+    }
+
+    .categorias-aside{
+        display: initial;
     }
 
     .toggle{
